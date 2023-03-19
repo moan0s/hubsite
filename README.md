@@ -1,6 +1,6 @@
 # Hubsite
 
-Hubsite is ansible an role to run a simple, static site that shows an overview of available services.
+Hubsite is an ansible role to run a simple, static site that shows an overview of available services.
 
 It is powered by the official nginx docker image.
 
