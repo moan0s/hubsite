@@ -1,0 +1,17 @@
+---
+
+- block:
+    - when: hubsite_enabled | bool
+      ansible.builtin.include_tasks: "{{ role_path }}/tasks/setup_install.yml"
+  tags:
+    - setup-all
+    - setup-hubsite
+    - install-all
+    - install-hubsite
+
+- block:
+    - when: not hubsite_enabled | bool
+      ansible.builtin.include_tasks: "{{ role_path }}/tasks/setup_uninstall.yml"
+  tags:
+    - setup-all
+    - setup-hubsite

@@ -1,0 +1,11 @@
+---
+
+- name: Fail if required hubsite settings not defined
+  ansible.builtin.fail:
+    msg: >-
+      You need to define a required configuration setting (`{{ item }}`) for using this role.
+  when: "vars[item] == ''"
+  with_items:
+    - hubsite_title
+    - hubsite_subtitle
+    - hubsite_domain

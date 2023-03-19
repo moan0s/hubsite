@@ -1,0 +1,62 @@
+---
+
+- name: Ensure hubsite network is created in Docker
+  community.docker.docker_network:
+    name: "{{ hubsite_container_network }}"
+    driver: bridge
+
+- name: Ensure hubsite path exists
+  ansible.builtin.file:
+    path: "{{ item.path }}"
+    state: directory
+    mode: 0700
+    owner: "{{ hubsite_uid }}"
+    group: "{{ hubsite_gid }}"
+  with_items:
+    - {path: "{{ hubsite_base_path }}", when: true}
+
+- name: Ensure hubsite public path exists
+  ansible.builtin.file:
+    path: "{{ item.path }}"
+    state: directory
+    mode: 0755
+    owner: "{{ hubsite_uid }}"
+    group: "{{ hubsite_gid }}"
+  with_items:
+    - {path: "{{ hubsite_html_path }}", when: true}
+
+- name: Ensure hubsite traefik labels are installed
+  ansible.builtin.template:
+    src: "{{ role_path }}/templates/labels.j2"
+    dest: "{{ hubsite_base_path }}/labels}"
+    owner: "{{ hubsite_uid }}"
+    group: "{{ hubsite_gid }}"
+    mode: 0640
+  when: hubsite_container_labels_traefik_enabled
+
+- name: Ensure hubsite html is installed
+  ansible.builtin.template:
+    src: "{{ role_path }}/templates/html/index.html.j2"
+    dest: "{{ hubsite_html_path }}/index.html"
+    owner: "{{ hubsite_uid }}"
+    group: "{{ hubsite_gid }}"
+    mode: 0644
+
+- name: Ensure hubsite css is installed
+  ansible.builtin.template:
+    src: "{{ role_path }}/templates/html/styles.css.j2"
+    dest: "{{ hubsite_html_path }}/styles.css"
+    owner: "{{ hubsite_uid }}"
+    group: "{{ hubsite_gid }}"
+    mode: 0644
+
+- name: Ensure nginx container image is pulled
+  community.docker.docker_image:
+    name: "{{ hubsite_container_image }}"
+    source: "{{ 'pull' if ansible_version.major > 2 or ansible_version.minor > 7 else omit }}"
+
+- name: Ensure hubsite.service installed
+  ansible.builtin.template:
+    src: "{{ role_path }}/templates/systemd/hubsite.service.j2"
+    dest: "{{ devture_systemd_docker_base_systemd_path }}/{{ hubsite_identifier }}.service"
+    mode: 0644

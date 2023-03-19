@@ -1,0 +1,38 @@
+[Unit]
+Description=Hubsite - static website service list
+{% for service in hubsite_systemd_required_services_list %}
+Requires={{ service }}
+After={{ service }}
+{% endfor %}
+DefaultDependencies=no
+
+[Service]
+Type=simple
+Environment="HOME={{ devture_systemd_docker_base_systemd_unit_home_path }}"
+
+ExecStartPre=-{{ devture_systemd_docker_base_host_command_sh }} -c '{{ devture_systemd_docker_base_host_command_docker }} kill {{ hubsite_identifier }} 2>/dev/null || true'
+ExecStartPre=-{{ devture_systemd_docker_base_host_command_sh }} -c '{{ devture_systemd_docker_base_host_command_docker }} rm {{ hubsite_identifier }} 2>/dev/null || true'
+
+ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
+			--rm \
+			--name={{ hubsite_identifier }} \
+			--log-driver=none \
+			--network={{ hubsite_container_network }} \
+			--label-file={{ hubsite_base_path }}/labels \
+			-v {{ hubsite_html_path }}:/usr/share/nginx/html \
+			{{ hubsite_container_image }}
+
+{% for network in hubsite_container_additional_networks %}
+ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} network connect {{ network }} {{ hubsite_identifier }}
+{% endfor %}
+ExecStart={{ devture_systemd_docker_base_host_command_docker }} start --attach {{ hubsite_identifier }}
+
+ExecStop=-{{ devture_systemd_docker_base_host_command_sh }} -c '{{ devture_systemd_docker_base_host_command_docker }} kill {{ hubsite_identifier }} 2>/dev/null || true'
+ExecStop=-{{ devture_systemd_docker_base_host_command_sh }} -c '{{ devture_systemd_docker_base_host_command_docker }} rm {{ hubsite_identifier }} 2>/dev/null || true'
+
+Restart=always
+RestartSec=30
+SyslogIdentifier={{ hubsite_identifier }}
+
+[Install]
+WantedBy=multi-user.target

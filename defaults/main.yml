@@ -1,0 +1,47 @@
+---
+hubsite_identifier: hubsite
+hubsite_enabled: true
+
+hubsite_domain: ""
+hubsite_subpath: "/"
+
+hubsite_title: ""
+hubsite_subtitle: ""
+
+hubsite_base_path: "/hubsite"
+
+# Folder containing hubsite's data, this folder will be your main data storage and must be on a large storage (e.g. large HDD)
+hubsite_html_path: "{{ hubsite_base_path }}/html"
+
+hubsite_systemd_required_services_list: ['docker.service']
+
+hubsite_nginx_version: 1.23.3
+
+hubsite_container_image: "nginx:{{ hubsite_nginx_version }}"
+
+hubsite_container_network: "{{ hubsite_identifier }}"
+
+# A list of additional container networks that the container would be connected to.
+# The role does not create these networks, so make sure they already exist.
+# Use this to expose this container to a reverse proxy, which runs in a different container network.
+hubsite_container_additional_networks: []
+
+# hubsite_container_labels_traefik_enabled controls whether labels to assist a Traefik reverse-proxy will be attached to the container.
+# See `roles/custom/hubsite/templates/labels.j2` for details.
+#
+# To inject your own other container labels, see `hubsite_container_labels_additional_labels`.
+hubsite_container_labels_traefik_enabled: false
+hubsite_container_labels_traefik_docker_network: "{{ hubsite_container_network }}"
+hubsite_container_labels_traefik_entrypoints: web-secure
+hubsite_container_labels_traefik_tls_certResolver: default  # noqa var-naming
+
+# hubsite_container_labels_additional_labels contains a multiline string with additional labels to add to the container label file.
+# See `roles/custom/collabora_online/templates/labels.j2` for details.
+#
+# Example:
+# hubsite_container_labels_additional_labels: |
+#   my.label=1
+#   another.label="here"
+hubsite_container_labels_additional_labels: ''
+
+hubsite_services: []

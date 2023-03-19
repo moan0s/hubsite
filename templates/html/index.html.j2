@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type='text/css' media='all' href="styles.css">
+    <title>{{ hubsite_title }}</title>
+</head>
+<body>
+<div class="aligncenter slide current">
+    <div class="wrap">
+        <h2><strong>{{ hubsite_title }}</strong></h2>
+        <p>{{ hubsite_subtitle }}</p>
+        <hr>
+        <ul class="flexblock">
+            {% for service in hubsite_service_list %}
+            <li>
+                <h2><img class="logo" {% if service.logo_location %} src="assets/logo-{{ service.name }}.png" {% endif %} alt="{{ service.name }} Logo">{{ service.name }}</h2>
+                {{ service.description }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
