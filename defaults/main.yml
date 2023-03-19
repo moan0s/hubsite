@@ -45,4 +45,6 @@ hubsite_container_labels_traefik_tls_certResolver: default  # noqa var-naming
 #   another.label="here"
 hubsite_container_labels_additional_labels: ''
 
-hubsite_services: []
+hubsite_service_list_auto: []
+hubsite_service_list_additional: []
+hubsite_service_list: "{{ hubsite_service_list_auto + hubsite_service_list_additional }}"

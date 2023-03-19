@@ -11,7 +11,9 @@ hubsite_enabled: true
 hubsite_hostname: "example.com"
 hubsite_title: "My services"
 hubsite_subtitle: "Just click on a service to use it"
-hubsite_service_list: |
+
+# Use `hubsite_service_list_auto` if you develop a playbook. A user can then add additional services via `hubsite_service_list_additional`
+hubsite_service_list_auto: |
   {{
     ([{'name': 'Miniflux', 'url': 'https://' +  miniflux_hostname + miniflux_path_prefix, 'logo_location': '{{ role_path }}/assets/miniflux.png', 'description': 'An opinionated feed reader '}] if miniflux_enabled else [])
     +
