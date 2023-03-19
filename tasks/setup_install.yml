@@ -24,6 +24,7 @@
     group: "{{ hubsite_gid }}"
   with_items:
     - {path: "{{ hubsite_html_path }}", when: true}
+    - {path: "{{ hubsite_assets_path }}", when: true}
 
 - name: Ensure hubsite traefik labels are installed
   ansible.builtin.template:
@@ -49,6 +50,15 @@
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
     mode: 0644
+
+- name: Ensure hubsite logos are installed
+  ansible.builtin.copy:
+    src: "{{ item.logo_location }}"
+    dest: "{{ hubsite_assets_path }}/{{ item.logo_location.split('/') | last }}"
+    owner: "{{ hubsite_uid }}"
+    group: "{{ hubsite_gid }}"
+    mode: 0644
+  loop: "{{ hubsite_service_list }}"
 
 - name: Ensure nginx container image is pulled
   community.docker.docker_image:

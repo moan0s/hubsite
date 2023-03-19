@@ -13,8 +13,10 @@ hubsite_title: "My services"
 hubsite_subtitle: "Just click on a service to use it"
 hubsite_service_list: |
   {{
-    ([{'name': 'Miniflux', 'logo_location': '', 'description': 'An opinionated feed reader'}] if miniflux_enabled else [])
+    ([{'name': 'Miniflux', 'logo_location': '{{ role_path }}/assets/miniflux.png', 'description': 'An opinionated feed reader '}] if miniflux_enabled else [])
     +
-    ([{'name': 'Nextcloud', 'logo_location': '', 'description': 'Sync your files'}] if nextcloud_enabled else [])
+    ([{'name': 'Uptime Kuma', 'logo_location': '{{ role_path }}/assets/uptime-kuma.png', 'description': 'Check if the status of services'}] if uptime_kuma_enabled else [])
   }}
 ```
+
+If you don't have a fitting logo for your service just use `logo_location': ''`

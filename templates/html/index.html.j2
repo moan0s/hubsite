@@ -14,7 +14,7 @@
         <ul class="flexblock">
             {% for service in hubsite_service_list %}
             <li>
-                <h2><img class="logo" {% if service.logo_location %} src="assets/logo-{{ service.name }}.png" {% endif %} alt="{{ service.name }} Logo">{{ service.name }}</h2>
+                <h2>{% if service.logo_location | length > 0 %}<img class="logo"  src="assets/{{ service.logo_location.split('/') | last }}"  alt="{{ service.name }} Logo">{% endif %}{{ service.name }}</h2>
                 {{ service.description }}
             </li>
             {% endfor %}
