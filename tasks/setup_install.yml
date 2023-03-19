@@ -58,6 +58,7 @@
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
     mode: 0644
+  when: item.logo_location | length > 0
   loop: "{{ hubsite_service_list }}"
 
 - name: Ensure nginx container image is pulled
