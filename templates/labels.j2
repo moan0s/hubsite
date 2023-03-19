@@ -3,7 +3,7 @@
 traefik.docker.network={{ hubsite_container_labels_traefik_docker_network }}
 {% endif %}
 traefik.enable=true
-traefik.http.routers.{{ hubsite_identifier }}.rule=Host("{{ hubsite_domain }}")
+traefik.http.routers.{{ hubsite_identifier }}.rule=Host("{{ hubsite_hostname }}")
 traefik.http.routers.{{ hubsite_identifier }}.service={{ hubsite_identifier }}
 traefik.http.routers.{{ hubsite_identifier }}.entrypoints={{ hubsite_container_labels_traefik_entrypoints }}
 traefik.http.routers.{{ hubsite_identifier }}.tls.certResolver={{ hubsite_container_labels_traefik_tls_certResolver }}

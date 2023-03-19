@@ -8,4 +8,4 @@
   with_items:
     - hubsite_title
     - hubsite_subtitle
-    - hubsite_domain
+    - hubsite_hostname

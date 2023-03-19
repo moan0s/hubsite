@@ -2,7 +2,7 @@
 hubsite_identifier: hubsite
 hubsite_enabled: true
 
-hubsite_domain: ""
+hubsite_hostname: ""
 hubsite_subpath: "/"
 
 hubsite_title: ""

@@ -8,7 +8,7 @@ You can use the following variables to control your hubsite:
 
 ```yaml
 hubsite_enabled: true
-hubsite_domain: "example.com"
+hubsite_hostname: "example.com"
 hubsite_title: "My services"
 hubsite_subtitle: "Just click on a service to use it"
 hubsite_service_list: |
