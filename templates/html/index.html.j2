@@ -13,10 +13,12 @@
         <hr>
         <ul class="flexblock">
             {% for service in hubsite_service_list %}
-            <li>
+            <a href="{{ service.url }}">
+              <li>
                 <h2>{% if service.logo_location | length > 0 %}<img class="logo"  src="assets/{{ service.logo_location.split('/') | last }}"  alt="{{ service.name }} Logo">{% endif %}{{ service.name }}</h2>
                 {{ service.description }}
-            </li>
+              </li>
+            </a>
             {% endfor %}
         </ul>
     </div>

@@ -1,6 +1,6 @@
 # Hubsite
 
-Hubsite is ansible role to run a simple, static site that shows an overview of available services.
+Hubsite is ansible an role to run a simple, static site that shows an overview of available services.
 
 It is powered by the official nginx docker image.
 
@@ -13,9 +13,17 @@ hubsite_title: "My services"
 hubsite_subtitle: "Just click on a service to use it"
 hubsite_service_list: |
   {{
-    ([{'name': 'Miniflux', 'logo_location': '{{ role_path }}/assets/miniflux.png', 'description': 'An opinionated feed reader '}] if miniflux_enabled else [])
+    ([{'name': 'Miniflux', 'url': 'https://' +  miniflux_hostname + miniflux_path_prefix, 'logo_location': '{{ role_path }}/assets/miniflux.png', 'description': 'An opinionated feed reader '}] if miniflux_enabled else [])
     +
-    ([{'name': 'Uptime Kuma', 'logo_location': '{{ role_path }}/assets/uptime-kuma.png', 'description': 'Check if the status of services'}] if uptime_kuma_enabled else [])
+    ([{'name': 'Uptime Kuma', 'url': 'https://' + uptime_kuma_hostname + uptime_kuma_path_prefix, 'logo_location': '{{ role_path }}/assets/uptime-kuma.png', 'description': 'Check if the status of services'}] if uptime_kuma_enabled else [])
+    +
+    ([{'name': 'Nextcloud', 'url': 'https://' + nextcloud_hostname + nextcloud_path_prefix, 'logo_location': '{{ role_path }}/assets/nextcloud.png', 'description': 'Sync your files & much more'}] if nextcloud_enabled else [])
+    +
+    ([{'name': 'Peertube', 'url': 'https://' + peertube_hostname + peertube_path_prefix, 'logo_location': '{{ role_path }}/assets/peertube.png', 'description': 'Watch videos '}] if peertube_enabled else [])
+    +
+    ([{'name': 'Vaultwarden', 'url': 'https://' + vaultwarden_hostname + vaultwarden_path_prefix, ' logo_location': '{{ role_path }}/assets/vaultwarden.png', 'description': 'Securly access your passwords'}] if vaultwarden_enabled else [])
+    +
+    ([{'name': 'Gitea', 'url': 'https://' + gitea_hostname + gitea_path_prefix, 'logo_location': '{{ role_path }}/assets/gitea.png', 'description': 'A git service'}] if gitea_enabled else [])
   }}
 ```
 
