@@ -4,6 +4,13 @@ Hubsite is an ansible role to run a simple, static site that shows an overview o
 
 It is powered by the official nginx docker image.
 
+
+## Example
+
+![A screenshot of hubsite hosting different services like Miniflux and nextcloud. The site and service logos are expressed in grey an white tones](assets/hubsite_desktop.png)
+
+## Configuration
+
 You can use the following variables to control your hubsite:
 
 ```yaml
@@ -32,7 +39,7 @@ hubsite_service_list_auto: |
 If you don't have a fitting logo for your service just use `logo_location': ''`
 
 
-# Logos
+## Logos
 
 There are some logos provided, so you can get started with a nice look immediately.
 
