@@ -29,7 +29,7 @@
 - name: Ensure hubsite traefik labels are installed
   ansible.builtin.template:
     src: "{{ role_path }}/templates/labels.j2"
-    dest: "{{ hubsite_base_path }}/labels}"
+    dest: "{{ hubsite_base_path }}/labels"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
     mode: 0640
