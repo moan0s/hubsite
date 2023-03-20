@@ -19,7 +19,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
 			--log-driver=none \
 			--network={{ hubsite_container_network }} \
 			--label-file={{ hubsite_base_path }}/labels \
-			-v {{ hubsite_html_path }}:/usr/share/nginx/html \
+			--mount {{ hubsite_html_path }}:/usr/share/nginx/html \
 			{{ hubsite_container_image }}
 
 {% for network in hubsite_container_additional_networks %}
