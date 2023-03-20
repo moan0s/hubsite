@@ -20,20 +20,30 @@ hubsite_title: "My services"
 hubsite_subtitle: "Just click on a service to use it"
 
 # Use `hubsite_service_list_auto` if you develop a playbook. A user can then add additional services via `hubsite_service_list_additional`
+
+# Nextcloud
+hubsite_service_nextcloud_enabled: "{{ nextcloud_enabled }}"
+hubsite_service_nextcloud_name: Nextcloud
+hubsite_service_nextcloud_url: "'https://{{ nextcloud_hostname }}{{ nextcloud_path_prefix }}"
+hubsite_service_nextcloud_logo_location: "{{ role_path }}/assets/nextcloud.png"
+hubsite_service_nextcloud_description: "Sync your files & much more"
+hubsite_service_nextcloud_priority: 1000
+
+# Peertube
+hubsite_service_peertube_enabled: "{{ peertube_enabled }}"
+hubsite_service_peertube_name: Peertube
+hubsite_service_peertube_url: "'https://{{ peertube_hostname }}{{ peertube_path_prefix }}"
+hubsite_service_peertube_logo_location: "{{ role_path }}/assets/peertube.png"
+hubsite_service_peertube_description: "Watch and upload videos"
+hubsite_service_peertube_priority: 1000
+
 hubsite_service_list_auto: |
   {{
-    ([{'name': 'Miniflux', 'url': 'https://' +  miniflux_hostname + miniflux_path_prefix, 'logo_location': '{{ role_path }}/assets/miniflux.png', 'description': 'An opinionated feed reader '}] if miniflux_enabled else [])
+    ([{'name': hubsite_service_nextcloud_name, 'url': hubsite_service_nextcloud_url, 'logo_location': hubsite_service_nextcloud_logo_location, 'description': hubsite_service_nextcloud_description, 'priority': hubsite_service_nextcloud_priority}] if hubsite_service_nextcloud_enabled else [])
     +
-    ([{'name': 'Uptime Kuma', 'url': 'https://' + uptime_kuma_hostname + uptime_kuma_path_prefix, 'logo_location': '{{ role_path }}/assets/uptime-kuma.png', 'description': 'Check if the status of services'}] if uptime_kuma_enabled else [])
-    +
-    ([{'name': 'Nextcloud', 'url': 'https://' + nextcloud_hostname + nextcloud_path_prefix, 'logo_location': '{{ role_path }}/assets/nextcloud.png', 'description': 'Sync your files & much more'}] if nextcloud_enabled else [])
-    +
-    ([{'name': 'Peertube', 'url': 'https://' + peertube_hostname + peertube_path_prefix, 'logo_location': '{{ role_path }}/assets/peertube.png', 'description': 'Watch videos '}] if peertube_enabled else [])
-    +
-    ([{'name': 'Vaultwarden', 'url': 'https://' + vaultwarden_hostname + vaultwarden_path_prefix, ' logo_location': '{{ role_path }}/assets/vaultwarden.png', 'description': 'Securly access your passwords'}] if vaultwarden_enabled else [])
-    +
-    ([{'name': 'Gitea', 'url': 'https://' + gitea_hostname + gitea_path_prefix, 'logo_location': '{{ role_path }}/assets/gitea.png', 'description': 'A git service'}] if gitea_enabled else [])
+    ([{'name': hubsite_service_peertube_name, 'url': hubsite_service_peertube_url, 'logo_location': hubsite_service_peertube_logo_location, 'description': hubsite_service_peertube_description, 'priority': hubsite_service_peertube_priority}] if hubsite_service_peertube_enabled else [])
   }}
+
 ```
 
 If you don't have a fitting logo for your service just use `logo_location': ''`
