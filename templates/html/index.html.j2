@@ -12,7 +12,7 @@
         <p>{{ hubsite_subtitle }}</p>
         <hr>
         <ul class="flexblock">
-            {% for service in hubsite_service_list %}
+            {% for service in hubsite_service_list | sort(attribute='priority')  %}
             <a href="{{ service.url }}">
               <li>
                 <h2>{% if service.logo_location | length > 0 %}<img class="logo"  src="assets/{{ service.logo_location.split('/') | last }}"  alt="{{ service.name }} Logo">{% endif %}{{ service.name }}</h2>
