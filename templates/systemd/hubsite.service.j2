@@ -18,8 +18,13 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
 			--name={{ hubsite_identifier }} \
 			--log-driver=none \
 			--network={{ hubsite_container_network }} \
+			--cap-drop=ALL \
+			--cap-add=NET_BIND_SERVICE \
+			--cap-add=SETGID \
+			--cap-add=SETUID \
+			--cap-add=CHOWN \
 			--label-file={{ hubsite_base_path }}/labels \
-			--mount {{ hubsite_html_path }}:/usr/share/nginx/html \
+			--mount type=bind,src={{ hubsite_html_path }},dst=/usr/share/nginx/html,ro \
 			{{ hubsite_container_image }}
 
 {% for network in hubsite_container_additional_networks %}
