@@ -1,0 +1,24 @@
+---
+
+- name: Check existence of hubsite systemd service
+  ansible.builtin.stat:
+    path: "{{ devture_systemd_docker_base_systemd_path }}/{{ hubsite_identifier }}.service"
+  register: hubsite_service_stat
+
+- when: hubsite_service_stat.stat.exists | bool
+  block:
+  - name: Ensure hubsite service is stopped
+    ansible.builtin.service:
+      name: "{{ hubsite_identifier }}"
+      state: stopped
+      daemon_reload: true
+
+  - name: Ensure hubsite services don't exist
+    ansible.builtin.file:
+      dest: "{{ devture_systemd_docker_base_systemd_path }}/{{ hubsite_identifier }}.service"
+      state: absent
+
+  - name: Ensure hubsite base path is files deleted
+    ansible.builtin.file:
+      path: "{{ hubsite_base_path }}"
+      state: absent
