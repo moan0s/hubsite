@@ -6,21 +6,6 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-@media screen and (prefers-color-scheme: light) {
-    html {
-        background-color: #f1f1f1;
-        color: black;
-    }
-    .flexblock li {
-        background-color: #d9d9d9;
-    }
-    .logo {
-        border-spacing: 5px;
-        padding: 5px;
-        background-color: black;
-        border-radius: 3px;
-    }
-}
 
 .flexblock a {
     border: 1px solid #000;
@@ -83,5 +68,18 @@ section, .slide {
     text-align: center;
 }
 
-a {
+@media screen and (prefers-color-scheme: light) {
+    html {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    .flexblock a {
+        background-color: #d9d9d9;
+    }
+    .logo {
+        border-spacing: 5px;
+        padding: 5px;
+        background-color: black;
+        border-radius: 3px;
+    }
 }
