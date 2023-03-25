@@ -60,6 +60,7 @@ There are some logos provided, so you can get started with a nice look immediate
 | Generic Shield | CC0                                                                               | moanos                | ❌           | `{{ role_path }}/assets/shield.png`      |
 | Docker         | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)                         | dotCloud, Inc.        | ✅           | `{{ role_path }}/assets/docker.png`      |
 | Uptime Kuma    | [MIT](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)                | Louis Lam             | ✅           | `{{ role_path }}/assets/uptime-kuma.png` |
+| Focalboard     | [AGPL v.3.0](https://github.com/mattermost/focalboard/blob/main/LICENSE.txt)      | Mattermost, Inc.      | ✅           | `{{ role_path }}/assets/focalboard.png`  |
 | Gitea          | CC BY-SA 4.0                                                                      | Lauris BH             | ✅           | `{{ role_path }}/assets/gitea.png`       |
 | GoToSocial     | [AGPL v3.0](https://github.com/superseriousbusiness/gotosocial/blob/main/LICENSE) | GoToSocial Authors    | ✅           | `{{ role_path }}/assets/gotosocial.png`  |
 | Grafana        | [AGPL v3.0](https://github.com/grafana/grafana/blob/main/LICENSE)                 | Grafana Labs          | ✅           | `{{ role_path }}/assets/grafana.png`     |
