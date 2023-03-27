@@ -12,9 +12,9 @@ python cli.py render -i services_example.yml
 
 ## How does it look?
 
-![A screenshot of hubsite hosting different services like Miniflux and nextcloud. The site and service logos are expressed in grey an white tones](assets/hubsite_desktop.png)
+![A screenshot of hubsite hosting different services like Miniflux and Nextcloud. The site and service logos are expressed in grey an white tones](assets/hubsite_desktop.png)
 
-It uses `prefers-color-scheme` to automatically set the color scheme to light or dark.
+It uses `prefers-color-scheme` to automatically set the color scheme to light or dark. Check out  [this **live preview**](https://hubsite.hyteck.de) to see an example with all pre-configured services.
 
 ## Configuration
 
