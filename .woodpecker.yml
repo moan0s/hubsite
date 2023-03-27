@@ -1,0 +1,19 @@
+---
+
+pipeline:
+  build:
+    image: python
+    commands:
+      - python python cli.py render -i services_example.yml
+
+  deploy:
+    image: appleboy/drone-scp
+    settings:
+      strip_components: 1
+      host:
+        - hubsite.hyteck.de
+      username: hubsite
+      target: /var/www/html/hubsite/
+      source: public/
+      key:
+        from_secret: ssh_key
