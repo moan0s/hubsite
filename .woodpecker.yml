@@ -14,7 +14,7 @@ pipeline:
       host:
         - hubsite.hyteck.de
       username: hubsite
-      target: /var/www/html/hubsite/
+      target: /var/www/hubsite/
       source: public/
       key:
         from_secret: ssh_key
