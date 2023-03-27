@@ -9,7 +9,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-    - name: Archlinux
+    - name: ArchLinux
       versions:
         - all
     - name: EL
