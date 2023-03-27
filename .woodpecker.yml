@@ -4,7 +4,7 @@ pipeline:
   build:
     image: python
     commands:
-      - python python cli.py render -i services_example.yml
+      - python cli.py render -i services_example.yml
 
   deploy:
     image: appleboy/drone-scp
