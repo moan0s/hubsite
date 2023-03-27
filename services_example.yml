@@ -49,7 +49,7 @@ services:
     description: Sync contacts and calendars
     url: xxx
     logo_location: "assets/radicale.png"
- 
+
   - name: Syncthing
     description: Sync your files
     url: xxx
