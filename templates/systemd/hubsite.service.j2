@@ -18,6 +18,9 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
 			--name={{ hubsite_identifier }} \
 			--log-driver=none \
 			--network={{ hubsite_container_network }} \
+			{% if hubsite_container_http_host_bind_port %}
+			-p {{ hubsite_container_http_host_bind_port }}:{{ hubsite_container_http_port }} \
+			{% endif %}
 			--cap-drop=ALL \
 			--cap-add=NET_BIND_SERVICE \
 			--cap-add=SETGID \
