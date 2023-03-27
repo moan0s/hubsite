@@ -5,7 +5,7 @@ pipeline:
     image: cytopia/ansible-lint
     commands:
       - "ansible-lint"
-  build:
+  render:
     image: python
     commands:
       - pip install pyyaml jinja2
