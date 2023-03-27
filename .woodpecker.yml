@@ -4,7 +4,7 @@ pipeline:
   build:
     image: python
     commands:
-      - pip install pyyaml
+      - pip install pyyaml jinja2
       - python cli.py render -i services_example.yml
 
   deploy:
