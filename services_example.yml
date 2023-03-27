@@ -1,0 +1,71 @@
+---
+
+title: My site
+subtitle: An overview of all hosted services
+
+
+services:
+  - name: Adguard Home
+    description: A network-wide DNS software for blocking ads & tracking
+    url: xxx
+    logo_location: "assets/shield.png"
+
+  - name: Docker Registry Browser
+    description: Browse docker images
+    url: xxx
+    logo_location: "assets/docker.png"
+
+  - name: Focalboard
+    description: An open source, self-hosted alternative to Trello, Notion, and Asana.
+    url: xxx
+    logo_location: "assets/focalboard.png"
+
+  - name: Gitea
+    description: A selfhosted git service
+    url: xxx
+    logo_location: "assets/gitea.png"
+
+  - name: GoToSocial
+    description: A fediverse server
+    url: xxx
+    logo_location: "assets/gotosocial.png"
+
+  - name: Grafana
+    description: Check how your server is doing
+    url: xxx
+    logo_location: "assets/grafana.png"
+
+  - name: Miniflux
+    description: An opinionated feed reader
+    url: xxx
+    logo_location: "assets/miniflux.png"
+
+  - name: Nextcloud
+    description: Sync your files & much more
+    url: xxx
+    logo_location: "assets/nextcloud.png"
+
+  - name: Radicale
+    description: Sync contacts and calendars
+    url: xxx
+    logo_location: "assets/radicale.png"
+ 
+  - name: Syncthing
+    description: Sync your files
+    url: xxx
+    logo_location: "assets/syncthing.png"
+
+  - name: Uptime Kuma
+    description: Check the status of the services
+    url: xxx
+    logo_location: "assets/uptime-kuma.png"
+
+  - name: Vaultwarden
+    description: Securely access your passwords
+    url: xxx
+    logo_location: "assets/vaultwarden.png"
+
+  - name: Woodpecker CI
+    description: Check you CI
+    url: xxx
+    logo_location: "assets/woodpecker.png"

@@ -4,6 +4,11 @@ Hubsite is an ansible role to run a simple, static site that shows an overview o
 
 It is powered by the official nginx docker image.
 
+You can alternativly use it manually with
+
+```bash
+python cli.py render -i services_example.yml
+```
 
 ## How does it look?
 
