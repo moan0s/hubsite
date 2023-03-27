@@ -65,6 +65,7 @@ There are some logos provided, so you can get started with a nice look immediate
 | Grafana        | [AGPL v3.0](https://github.com/grafana/grafana/blob/main/LICENSE)                 | Grafana Labs            | ✅           | `{{ role_path }}/assets/grafana.png`     |
 | Miniflux       | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)                         | Frédéric Guillot        | ✅           | `{{ role_path }}/assets/miniflux.png`    |
 | Nextcloud      | Public Domain                                                                     | Nextcloud               | ✅           | `{{ role_path }}/assets/nextcloud.png`   |
+| Owncast        | [MIT](https://github.com/owncast/owncast/blob/develop/LICENSE)                    | Owncast contributors    | ✅           | `{{ role_path }}/assets/owncast.png`     |
 | Peertube       | Public Domain                                                                     | PeerTube contributors   | ✅           | `{{ role_path }}/assets/peertube.png`    |
 | Prometheus     | [Apache 2.0](https://github.com/prometheus/prometheus/blob/main/LICENSE)          | -                       | ✅           | `{{ role_path }}/assets/prometheus.png`  |
 | Radicale       | [GPL 3.0](https://github.com/Kozea/Radicale/blob/master/COPYING.md)               | Unrud                   | ✅           | `{{ role_path }}/assets/radicale.png`    |
