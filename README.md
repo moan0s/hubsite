@@ -65,8 +65,9 @@ There are some logos provided, so you can get started with a nice look immediate
 | Generic Shield | CC0                                                                               | moanos                  | ❌           | `{{ role_path }}/assets/shield.png`      |
 | Docker         | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)                         | dotCloud, Inc.          | ✅           | `{{ role_path }}/assets/docker.png`      |
 | Focalboard     | [AGPL v.3.0](https://github.com/mattermost/focalboard/blob/main/LICENSE.txt)      | Mattermost, Inc.        | ✅           | `{{ role_path }}/assets/focalboard.png`  |
+| Funkwhale      | [CC BY-SA 3.0](https://dev.funkwhale.audio/funkwhale/funkwhale/-/blob/stable/front/src/assets/logo/License.md) | Francis Gading | ✅ | `{{ role_path }}/assets/funkwhale.png`  |
 | Gitea          | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Lauris BH               | ✅           | `{{ role_path }}/assets/gitea.png`       |
-| GoToSocial     | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Anna Abramek      | ✅           | `{{ role_path }}/assets/gotosocial.png`  |
+| GoToSocial     | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Anna Abramek            | ✅           | `{{ role_path }}/assets/gotosocial.png`  |
 | Grafana        | [AGPL v3.0](https://github.com/grafana/grafana/blob/main/LICENSE)                 | Grafana Labs            | ✅           | `{{ role_path }}/assets/grafana.png`     |
 | Miniflux       | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)                         | Frédéric Guillot        | ✅           | `{{ role_path }}/assets/miniflux.png`    |
 | Nextcloud      | Public Domain                                                                     | Nextcloud               | ✅           | `{{ role_path }}/assets/nextcloud.png`   |
