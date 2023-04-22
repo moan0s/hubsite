@@ -55,6 +55,11 @@ services:
     url: /
     logo_location: "assets/grafana.png"
 
+  - name: Healthchecks
+    description: Check how your server is doing
+    url: /
+    logo_location: "assets/healthchecks.png"
+
   - name: Miniflux
     description: An opinionated feed reader
     url: /
