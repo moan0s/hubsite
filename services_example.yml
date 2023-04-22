@@ -10,6 +10,16 @@ services:
     url: xxx
     logo_location: "assets/shield.png"
 
+  - name: Authentik
+    description: An open-source identity provider
+    url: /
+    logo_location: "assets/authentik.png"
+
+  - name: Appsmith
+    description: Platform for building and deploying custom internal tools and applications without writing code
+    url: /
+    logo_location: "assets/appsmith.png"
+
   - name: Docker Registry Browser
     description: Browse docker images
     url: xxx
