@@ -55,7 +55,7 @@ services:
     url: /
     logo_location: "assets/grafana.png"
 
-  - name: Keycloak
+  - name: Healthchecks
     description: A simple and Effective Cron Job Monitoring solution
     url: /
     logo_location: "assets/healthchecks.png"
