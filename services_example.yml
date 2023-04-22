@@ -34,12 +34,12 @@ services:
     description: An open source, self-hosted alternative to Trello, Notion, and Asana.
     url: /
     logo_location: "assets/focalboard.png"
-  
+
   - name: Funkwhale
     description: Listen and share music with a selfhosted streaming server.
     url: /
     logo_location: "assets/focalboard.png"
-  
+
   - name: Gitea
     description: A selfhosted git service
     url: /
