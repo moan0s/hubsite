@@ -55,7 +55,7 @@ services:
     url: /
     logo_location: "assets/grafana.png"
 
-  - name: Healthchecks
+  - name: Keycloak
     description: A simple and Effective Cron Job Monitoring solution
     url: /
     logo_location: "assets/healthchecks.png"
@@ -74,6 +74,11 @@ services:
     description: Sync your files & much more
     url: /
     logo_location: "assets/nextcloud.png"
+
+  - name: Owncast
+    description: Livestream & Chat
+    url: /
+    logo_location: "assets/owncast.png"
 
   - name: Peertube
     description: A fediverse server to share videos, follow & interact with people
