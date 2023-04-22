@@ -73,6 +73,7 @@ There are some logos provided, so you can get started with a nice look immediate
 | GoToSocial     | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Anna Abramek            | ✅           | `{{ role_path }}/assets/gotosocial.png`  |
 | Grafana        | [AGPL v3.0](https://github.com/grafana/grafana/blob/main/LICENSE)                 | Grafana Labs            | ✅           | `{{ role_path }}/assets/grafana.png`     |
 | Healthchecks   | [BSD 3-Clause](https://github.com/healthchecks/healthchecks/blob/master/LICENSE) | Pēteris Caune and other contributors|✅ | `{{ role_path }}/assets/healthchecks.png`|
+| Keycloak       | [Apache License 2.0](https://github.com/keycloak/keycloak/blob/main/LICENSE.txt)  | Keycloak contributers   |✅            | `{{ role_path }}/assets/keycloak.png`    |
 | Miniflux       | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)                         | Frédéric Guillot        | ✅           | `{{ role_path }}/assets/miniflux.png`    |
 | Nextcloud      | Public Domain                                                                     | Nextcloud               | ✅           | `{{ role_path }}/assets/nextcloud.png`   |
 | Owncast        | [MIT](https://github.com/owncast/owncast/blob/develop/LICENSE)                    | Owncast contributors    | ✅           | `{{ role_path }}/assets/owncast.png`     |

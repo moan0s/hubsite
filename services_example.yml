@@ -56,9 +56,14 @@ services:
     logo_location: "assets/grafana.png"
 
   - name: Healthchecks
-    description: Check how your server is doing
+    description: A simple and Effective Cron Job Monitoring solution
     url: /
     logo_location: "assets/healthchecks.png"
+
+  - name: Keycloak
+    description: An open source identity and access management solution.
+    url: /
+    logo_location: "assets/keycloak.png"
 
   - name: Miniflux
     description: An opinionated feed reader
