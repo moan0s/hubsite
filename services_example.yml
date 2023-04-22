@@ -75,6 +75,11 @@ services:
     url: /
     logo_location: "assets/nextcloud.png"
 
+  - name: Peertube
+    description: A fediverse server to share videos, follow & interact with people
+    url: /
+    logo_location: "assets/peertube.png"
+
   - name: Radicale
     description: Sync contacts and calendars
     url: /
