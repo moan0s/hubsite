@@ -66,6 +66,7 @@ There are some logos provided, so you can get started with a nice look immediate
 | Authentik      | [CC-BY-SA 4.0](https://github.com/goauthentik/authentik/blob/main/LICENSE)        | Jens Langhammer         | ✅           | `{{ role_path }}/assets/authentik.png`   |
 | Appsmith       | [Apache License](https://github.com/appsmithorg/appsmith/blob/release/LICENSE)    | Appsmith contributers   | ✅           | `{{ role_path }}/assets/appsmith.png`   |
 | Docker         | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)                         | dotCloud, Inc.          | ✅           | `{{ role_path }}/assets/docker.png`      |
+| Firezone       | [Apache License](https://github.com/firezone/firezone/blob/master/LICENSE)        | Firezone contributers   | ✅           | `{{ role_path }}/assets/firezone.png`  |
 | Focalboard     | [AGPL v.3.0](https://github.com/mattermost/focalboard/blob/main/LICENSE.txt)      | Mattermost, Inc.        | ✅           | `{{ role_path }}/assets/focalboard.png`  |
 | Funkwhale      | [CC BY-SA 3.0](https://dev.funkwhale.audio/funkwhale/funkwhale/-/blob/stable/front/src/assets/logo/License.md) | Francis Gading | ✅ | `{{ role_path }}/assets/funkwhale.png`  |
 | Gitea          | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Lauris BH               | ✅           | `{{ role_path }}/assets/gitea.png`       |
