@@ -73,7 +73,7 @@ There are some logos provided, so you can get started with a nice look immediate
 | GoToSocial     | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Anna Abramek            | ✅           | `{{ role_path }}/assets/gotosocial.png`  |
 | Grafana        | [AGPL v3.0](https://github.com/grafana/grafana/blob/main/LICENSE)                 | Grafana Labs            | ✅           | `{{ role_path }}/assets/grafana.png`     |
 | Healthchecks   | [BSD 3-Clause](https://github.com/healthchecks/healthchecks/blob/master/LICENSE) | Pēteris Caune and other contributors|✅ | `{{ role_path }}/assets/healthchecks.png`|
-| Jitsi          | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)                 | Jitsi contributers      |✅            | `{{ role_path }}/assets/jitsi.png`    |
+| Jitsi          | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)                 | Jitsi contributers      |✅            | `{{ role_path }}/assets/jitsi.png`       |
 | Keycloak       | [Apache License 2.0](https://github.com/keycloak/keycloak/blob/main/LICENSE.txt)  | Keycloak contributers   |✅            | `{{ role_path }}/assets/keycloak.png`    |
 | Miniflux       | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)                         | Frédéric Guillot        | ✅           | `{{ role_path }}/assets/miniflux.png`    |
 | Mobilizon      | [AGPL v.3.0](https://framagit.org/framasoft/mobilizon/-/blob/main/LICENSE)        | Mobilizon contributers  | ✅           | `{{ role_path }}/assets/mobilizon.png`   |
@@ -83,9 +83,9 @@ There are some logos provided, so you can get started with a nice look immediate
 | Peertube       | Public Domain                                                                     | PeerTube contributors   | ✅           | `{{ role_path }}/assets/peertube.png`    |
 | Prometheus     | [Apache 2.0](https://github.com/prometheus/prometheus/blob/main/LICENSE)          | -                       | ✅           | `{{ role_path }}/assets/prometheus.png`  |
 | Radicale       | [GPL 3.0](https://github.com/Kozea/Radicale/blob/master/COPYING.md)               | Unrud                   | ✅           | `{{ role_path }}/assets/radicale.png`    |
-| Redmine        | [CC-BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5/)                    | Martin Herr             | ✅           | `{{ role_path }}/assets/redmine.png`    |
+| Redmine        | [CC-BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5/)                    | Martin Herr             | ✅           | `{{ role_path }}/assets/redmine.png`     |
 | Syncthing      | [MPLv2](https://github.com/syncthing/syncthing/blob/main/LICENSE)                 | Syncthing contributors  | ✅           | `{{ role_path }}/assets/syncthing.png`   |
 | Uptime Kuma    | [MIT](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)                | Louis Lam               | ✅           | `{{ role_path }}/assets/uptime-kuma.png` |
 | Vaultwarden    | [AGPL v3.0](https://github.com/dani-garcia/vaultwarden/blob/main/LICENSE.txt)     | Mathijs van Veluw       | ✅           | `{{ role_path }}/assets/vaultwarden.png` |
-| WG Easy        | [custom](https://github.com/wg-easy/wg-easy/blob/master/LICENSE.md)               | Emile Nijssen           | ✅           | `{{ role_path }}/assets/wg_easy.png` |
+| WG Easy        | [custom](https://github.com/wg-easy/wg-easy/blob/master/LICENSE.md)               | Emile Nijssen           | ✅           | `{{ role_path }}/assets/wg_easy.png`     |
 | Woodpecker CI  | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)                         | Woodpecker contributors | ✅           | `{{ role_path }}/assets/woodpecker.png`  |
