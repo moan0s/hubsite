@@ -70,6 +70,11 @@ services:
     url: /
     logo_location: "assets/keycloak.png"
 
+  - name: Lago
+    description: Metering and usage-based billing
+    url: /
+    logo_location: "assets/lago.png"
+
   - name: Miniflux
     description: An opinionated feed reader
     url: /
