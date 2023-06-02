@@ -89,6 +89,11 @@ services:
     description: Sync contacts and calendars
     url: /
     logo_location: "assets/radicale.png"
+  
+  - name: Redmine
+    description: A flexible project management web application.
+    url: /
+    logo_location: "assets/redmine.png"
 
   - name: Syncthing
     description: Sync your files

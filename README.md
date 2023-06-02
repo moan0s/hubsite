@@ -80,6 +80,7 @@ There are some logos provided, so you can get started with a nice look immediate
 | Peertube       | Public Domain                                                                     | PeerTube contributors   | ✅           | `{{ role_path }}/assets/peertube.png`    |
 | Prometheus     | [Apache 2.0](https://github.com/prometheus/prometheus/blob/main/LICENSE)          | -                       | ✅           | `{{ role_path }}/assets/prometheus.png`  |
 | Radicale       | [GPL 3.0](https://github.com/Kozea/Radicale/blob/master/COPYING.md)               | Unrud                   | ✅           | `{{ role_path }}/assets/radicale.png`    |
+| Redmine        | [CC-BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5/)                    | Martin Herr             | ✅           | `{{ role_path }}/assets/redmine.png`    |
 | Syncthing      | [MPLv2](https://github.com/syncthing/syncthing/blob/main/LICENSE)                 | Syncthing contributors  | ✅           | `{{ role_path }}/assets/syncthing.png`   |
 | Uptime Kuma    | [MIT](https://github.com/louislam/uptime-kuma/blob/master/LICENSE)                | Louis Lam               | ✅           | `{{ role_path }}/assets/uptime-kuma.png` |
 | Vaultwarden    | [AGPL v3.0](https://github.com/dani-garcia/vaultwarden/blob/main/LICENSE.txt)     | Mathijs van Veluw       | ✅           | `{{ role_path }}/assets/vaultwarden.png` |
