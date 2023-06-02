@@ -60,6 +60,11 @@ services:
     url: /
     logo_location: "assets/healthchecks.png"
 
+  - name: Jitsi
+    description: Start your video conference
+    url: /
+    logo_location: "assets/jitsi.png"
+
   - name: Keycloak
     description: An open source identity and access management solution.
     url: /
