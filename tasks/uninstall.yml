@@ -11,7 +11,7 @@
       ansible.builtin.service:
         name: "{{ hubsite_identifier }}"
         state: stopped
-        daemon_reload: true
+        enabled: false
 
     - name: Ensure hubsite services don't exist
       ansible.builtin.file:
