@@ -115,6 +115,11 @@ services:
     url: /
     logo_location: "assets/vaultwarden.png"
 
+  - name: WireGuard Easy
+    description: Manage your Wireguard VPN
+    url: /
+    logo_location: "assets/wireguard_easy.png"
+
   - name: Woodpecker CI
     description: Check you CI
     url: /
