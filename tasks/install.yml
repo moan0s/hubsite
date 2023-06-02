@@ -9,7 +9,7 @@
   ansible.builtin.file:
     path: "{{ item.path }}"
     state: directory
-    mode: 0700
+    mode: "0700"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
   with_items:
@@ -19,7 +19,7 @@
   ansible.builtin.file:
     path: "{{ item.path }}"
     state: directory
-    mode: 0755
+    mode: "0755"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
   with_items:
@@ -32,7 +32,7 @@
     dest: "{{ hubsite_base_path }}/labels"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
-    mode: 0640
+    mode: "0640"
   when: hubsite_container_labels_traefik_enabled
 
 - name: Ensure hubsite html is installed
@@ -41,7 +41,7 @@
     dest: "{{ hubsite_html_path }}/index.html"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
-    mode: 0644
+    mode: "0644"
 
 - name: Ensure hubsite css is installed
   ansible.builtin.template:
@@ -49,7 +49,7 @@
     dest: "{{ hubsite_html_path }}/styles.css"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
-    mode: 0644
+    mode: "0644"
 
 - name: Ensure hubsite logos are installed
   ansible.builtin.copy:
@@ -57,7 +57,7 @@
     dest: "{{ hubsite_assets_path }}/{{ item.logo_location.split('/') | last }}"
     owner: "{{ hubsite_uid }}"
     group: "{{ hubsite_gid }}"
-    mode: 0644
+    mode: "0644"
   when: item.logo_location | length > 0
   loop: "{{ hubsite_service_list }}"
 
@@ -70,4 +70,4 @@
   ansible.builtin.template:
     src: "{{ role_path }}/templates/systemd/hubsite.service.j2"
     dest: "{{ devture_systemd_docker_base_systemd_path }}/{{ hubsite_identifier }}.service"
-    mode: 0644
+    mode: "0644"

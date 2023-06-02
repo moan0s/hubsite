@@ -100,11 +100,16 @@ services:
     url: /
     logo_location: "assets/peertube.png"
 
+  - name: Prometheus
+    description: Access your metrics
+    url: /
+    logo_location: "assets/prometheus.png"
+
   - name: Radicale
     description: Sync contacts and calendars
     url: /
     logo_location: "assets/radicale.png"
-  
+
   - name: Redmine
     description: A flexible project management web application.
     url: /
