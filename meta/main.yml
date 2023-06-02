@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: hubsite
   author: Julian-Samuel Gebühr
   company: Hyteck
   description: Ansible role that provides a simple service overview
