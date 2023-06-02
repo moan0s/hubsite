@@ -76,6 +76,8 @@ There are some logos provided, so you can get started with a nice look immediate
 | Jitsi          | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)                 | Jitsi contributers      |✅            | `{{ role_path }}/assets/jitsi.png`    |
 | Keycloak       | [Apache License 2.0](https://github.com/keycloak/keycloak/blob/main/LICENSE.txt)  | Keycloak contributers   |✅            | `{{ role_path }}/assets/keycloak.png`    |
 | Miniflux       | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)                         | Frédéric Guillot        | ✅           | `{{ role_path }}/assets/miniflux.png`    |
+| Mobilizon      | [AGPL v.3.0](https://framagit.org/framasoft/mobilizon/-/blob/main/LICENSE)        | Mobilizon contributers  | ✅           | `{{ role_path }}/assets/mobilizon.png`   |
+| Navidrome      | [GPL 3.0](https://github.com/navidrome/navidrome/blob/master/LICENSE)             | Navidrome contributers  | ✅           | `{{ role_path }}/assets/navidrome.png`   |
 | Nextcloud      | Public Domain                                                                     | Nextcloud               | ✅           | `{{ role_path }}/assets/nextcloud.png`   |
 | Owncast        | [MIT](https://github.com/owncast/owncast/blob/develop/LICENSE)                    | Owncast contributors    | ✅           | `{{ role_path }}/assets/owncast.png`     |
 | Peertube       | Public Domain                                                                     | PeerTube contributors   | ✅           | `{{ role_path }}/assets/peertube.png`    |

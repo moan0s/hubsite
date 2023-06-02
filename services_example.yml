@@ -75,6 +75,16 @@ services:
     url: /
     logo_location: "assets/miniflux.png"
 
+  - name: Mobilizon
+    description: Create and share events.
+    url: /
+    logo_location: "assets/mobilizon.png"
+
+  - name: Navidrome
+    description: Subsonic-API compatible music server
+    url: /
+    logo_location: "assets/navidrome.png"
+
   - name: Nextcloud
     description: Sync your files & much more
     url: /
