@@ -16,9 +16,10 @@ pipeline:
     settings:
       strip_components: 1
       host:
-        - hubsite.hyteck.de
+        from_secret: host
       username: hubsite
-      target: /var/www/hubsite/
+      target:
+        from_secret: path
       source: public/
       key:
         from_secret: ssh_key
