@@ -17,7 +17,8 @@ pipeline:
       strip_components: 1
       host:
         from_secret: host
-      username: hubsite
+      username:
+        from_secret: ssh_user
       target:
         from_secret: path
       source: public/
