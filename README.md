@@ -63,11 +63,12 @@ There are some logos provided, so you can get started with a nice look immediate
 | Service/Purpose| Licence                                                                           | Author                  | Changes made | Use it with                              |
 |----------------|-----------------------------------------------------------------------------------|-------------------------|--------------|------------------------------------------|
 | Generic Shield | CC0                                                                               | moanos                  | ❌           | `{{ role_path }}/assets/shield.png`      |
-| Authentik      | [CC-BY-SA 4.0](https://github.com/goauthentik/authentik/blob/main/LICENSE)        | Jens Langhammer         | ✅           | `{{ role_path }}/assets/authentik.png`   |
 | Appsmith       | [Apache License](https://github.com/appsmithorg/appsmith/blob/release/LICENSE)    | Appsmith contributers   | ✅           | `{{ role_path }}/assets/appsmith.png`    |
+| Authentik      | [CC-BY-SA 4.0](https://github.com/goauthentik/authentik/blob/main/LICENSE)        | Jens Langhammer         | ✅           | `{{ role_path }}/assets/authentik.png`   |
 | Docker         | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)                         | dotCloud, Inc.          | ✅           | `{{ role_path }}/assets/docker.png`      |
 | Firezone       | [Apache License](https://github.com/firezone/firezone/blob/master/LICENSE)        | Firezone contributers   | ✅           | `{{ role_path }}/assets/firezone.png`    |
 | Focalboard     | [AGPL v.3.0](https://github.com/mattermost/focalboard/blob/main/LICENSE.txt)      | Mattermost, Inc.        | ✅           | `{{ role_path }}/assets/focalboard.png`  |
+| FreshRSS       | [AGPL v.3.0](https://github.com/FreshRSS/FreshRSS/blob/edge/LICENSE.txt)          | FreshRSS contributors   | ✅           | `{{ role_path }}/assets/freshrss.png`    |
 | Funkwhale      | [CC BY-SA 3.0](https://dev.funkwhale.audio/funkwhale/funkwhale/-/blob/stable/front/src/assets/logo/License.md) | Francis Gading | ✅ | `{{ role_path }}/assets/funkwhale.png`  |
 | Gitea          | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Lauris BH               | ✅           | `{{ role_path }}/assets/gitea.png`       |
 | GoToSocial     | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)                   | Anna Abramek            | ✅           | `{{ role_path }}/assets/gotosocial.png`  |
@@ -76,8 +77,10 @@ There are some logos provided, so you can get started with a nice look immediate
 | Jitsi          | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)                 | Jitsi contributers      |✅            | `{{ role_path }}/assets/jitsi.png`       |
 | Keycloak       | [Apache License 2.0](https://github.com/keycloak/keycloak/blob/main/LICENSE.txt)  | Keycloak contributers   |✅            | `{{ role_path }}/assets/keycloak.png`    |
 | Lago           | [AGPL v3.0](https://github.com/getlago/lago/blob/main/LICENSE)                    | Lago contributers       | ✅           | `{{ role_path }}/assets/lago.png`        |
+| Linkding       | [MIT](https://github.com/sissbruecker/linkding/blob/master/LICENSE.txt)           | Linkding                | ✅           | `{{ role_path }}/assets/linkding.png`    |
 | Miniflux       | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)                         | Frédéric Guillot        | ✅           | `{{ role_path }}/assets/miniflux.png`    |
 | Mobilizon      | [AGPL v.3.0](https://framagit.org/framasoft/mobilizon/-/blob/main/LICENSE)        | Mobilizon contributers  | ✅           | `{{ role_path }}/assets/mobilizon.png`   |
+| n8n            | [Sustainable Use License](https://github.com/n8n-io/n8n/blob/master/LICENSE.md)   | n8n                     | ✅           | `{{ role_path }}/assets/n8n.png`         |
 | Navidrome      | [GPL 3.0](https://github.com/navidrome/navidrome/blob/master/LICENSE)             | Navidrome contributers  | ✅           | `{{ role_path }}/assets/navidrome.png`   |
 | Nextcloud      | Public Domain                                                                     | Nextcloud               | ✅           | `{{ role_path }}/assets/nextcloud.png`   |
 | Owncast        | [MIT](https://github.com/owncast/owncast/blob/develop/LICENSE)                    | Owncast contributors    | ✅           | `{{ role_path }}/assets/owncast.png`     |
