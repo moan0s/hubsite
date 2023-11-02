@@ -135,6 +135,11 @@ services:
     url: /
     logo_location: "assets/redmine.png"
 
+  - name: Semaphore
+    description: A modern UI for Ansible.
+    url: /
+    logo_location: "assets/semaphore.png"
+
   - name: Syncthing
     description: Sync your files
     url: /
