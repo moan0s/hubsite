@@ -1,5 +1,7 @@
 # Hubsite
 
+[![status-badge](https://woodpecker.hyteck.de/api/badges/102/status.svg)](https://woodpecker.hyteck.de/repos/102)
+
 Hubsite is an ansible role to run a simple, static site that shows an overview of available services.
 
 It is powered by the official nginx docker image.
