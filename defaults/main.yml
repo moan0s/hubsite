@@ -16,7 +16,7 @@ hubsite_assets_path: "{{ hubsite_html_path }}/assets"
 
 hubsite_systemd_required_services_list: ['docker.service']
 
-hubsite_nginx_version: 1.25.2
+hubsite_nginx_version: 1.25.3
 
 hubsite_container_image: "nginx:{{ hubsite_nginx_version }}"
 
