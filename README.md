@@ -64,6 +64,7 @@ There are some logos provided, so you can get started with a nice look immediate
 
 | Service/Purpose   | Licence                                                                                                        | Author                               | Changes made | Use it with                               |
 |-------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------|--------------|-------------------------------------------|
+| Generic Docs Icon | CCO                                                                                                            | moanos                               | ❌            | `{{ role_path }}/assets/docs.png`         |
 | Generic Shield    | CC0                                                                                                            | moanos                               | ❌            | `{{ role_path }}/assets/shield.png`       |
 | Generic Mail Icon | CCO                                                                                                            | moanos                               | ❌            | `{{ role_path }}/assets/mail.png`         |
 | Appsmith          | [Apache License](https://github.com/appsmithorg/appsmith/blob/release/LICENSE)                                 | Appsmith contributers                | ✅            | `{{ role_path }}/assets/appsmith.png`     |
