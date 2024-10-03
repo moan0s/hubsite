@@ -13,6 +13,7 @@ hubsite_base_path: "/hubsite"
 # Folder containing hubsite's data, this folder will be your main data storage and must be on a large storage (e.g. large HDD)
 hubsite_html_path: "{{ hubsite_base_path }}/html"
 hubsite_assets_path: "{{ hubsite_html_path }}/assets"
+hubsite_extra_css: ""
 
 hubsite_systemd_required_services_list: ['docker.service']
 

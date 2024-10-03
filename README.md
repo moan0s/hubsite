@@ -98,3 +98,30 @@ There are some logos provided, so you can get started with a nice look immediate
 | Vaultwarden       | [AGPL v3.0](https://github.com/dani-garcia/vaultwarden/blob/main/LICENSE.txt)                                  | Mathijs van Veluw                    | ✅            | `{{ role_path }}/assets/vaultwarden.png`  |
 | WG Easy           | [custom](https://github.com/wg-easy/wg-easy/blob/master/LICENSE.md)                                            | Emile Nijssen                        | ✅            | `{{ role_path }}/assets/wg_easy.png`      |
 | Woodpecker CI     | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)                                                      | Woodpecker contributors              | ✅            | `{{ role_path }}/assets/woodpecker.png`   |
+
+
+# Custom CSS
+
+If you want to provide custom styling (CSS), you can add it (by appending it **on top of** the [default styles](https://github.com/mother-of-all-self-hosting/ansible-role-hubsite/blob/main/templates/html/styles.css.j2)) via the `hubsite_extra_css` variable like this:
+
+```yaml
+hubsite_extra_css: |
+  html {
+    background-color: #001a28;
+    color: white;
+  }
+
+  .flexblock a {
+      border: 5px solid #906000;
+      padding: 20px;
+      border-radius: 30px;
+      margin: 15px;
+      text-align: center;
+      background-color: #046;
+      width: 25%;
+  }
+
+  .logo {
+      background-color: #046;
+  }
+```
