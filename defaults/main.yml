@@ -17,9 +17,10 @@ hubsite_extra_css: ""
 
 hubsite_systemd_required_services_list: ['docker.service']
 
-hubsite_nginx_version: 1.25.4
+hubsite_nginx_version: 1.27.2
 
-hubsite_container_image: "nginx:{{ hubsite_nginx_version }}"
+hubsite_container_image: "{{ hubsite_container_image_registry_prefix }}nginx:{{ hubsite_nginx_version }}"
+hubsite_container_image_registry_prefix: "docker.io/"
 
 # The port number in the container
 hubsite_container_http_port: 80
